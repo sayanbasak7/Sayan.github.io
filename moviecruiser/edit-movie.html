@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <div class="home">
+            Movie Cruiser
+        </div>
+        <img src="c.jpg">
+        <a href="movie-list-admin.html">Movies</a>
+    </div>
+
+    <h1 class="a">Edit Movie</h1>
+    
+    <div class="body-content-colour">
+        <form action="edit-movie-status.html" name="editMovie" onsubmit="return validateForm()" name="editMovie" method="post">
+            <div>
+                <div class="form-field-spacing">
+                    <label for="title">Title</label>
+                </div>
+                <div>
+                    <input type="text" class="text-box text-box-title" name="title" id="title">
+                </div>
+            </div>
+           
+                <div class="form-field-spacing">
+                    <label for="gross">Gross($.)</label>
+                    <div>
+                        <input type="text" class="text-box" name="gross" id="gross">
+                    </div>
+                </div>
+           
+            
+                <div class="form-field-spacing">
+                    <label for="instock">Active</label>
+                    <div>
+                        <input class="radio" type="radio" name="instock" value="yes">yes
+                        <input class="radio" type="radio" name="instock" value="no">no
+                    </div>
+                </div>
+            
+        
+            <div class="form-field-spacing">
+                <label for="">Date of Launch</label>
+                <div>
+                    <input type="text" class="text-box" name="dateOfLaunch">
+                </div>
+            </div>
+        
+        <div class="form-field-spacing">
+            <label for="genre">Genre</label>
+            <div>
+                <select name="genre" class="dropdown">
+                    <option value="0">Superhero</option>
+                    <option value="sciencefiction">Science fiction</option>
+                    <option value="superhero">Superhero</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="adventure">Adventure</options>
+                    <option value="thriller">Thriller</options>
+                </select>
+            </div>
+        </div>
+        <div>
+            <div class="form-field-spacing">
+                <input type="checkbox" name="hasteaser" clas="">
+                <label for="free delivery ">Has Teaser</label>
+            </div>
+        </div>    
+        <div>
+            <input type="Submit" class="button success-button" value="Save">
+           
+        </div> 
+    </form>
+    </div>
+    <div class="footer">
+        <h3>Copyright@2019</h3>
+    </div>
+</body>
+</html>
